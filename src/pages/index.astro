@@ -1,0 +1,147 @@
+---
+import '../styles/global.css';
+---
+
+<!-- 加入 scroll-smooth 讓點擊選單時畫面平滑捲動 -->
+<html lang="zh-TW" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>徐紹鈞 | 跨領域專案執行與資訊管理</title>
+  </head>
+  <!-- 稍微縮小上方 padding (pt-6)，讓導覽列貼近頂部 -->
+  <body class="bg-[#fafafa] text-gray-900 font-sans max-w-2xl mx-auto px-6 pt-6 pb-16 selection:bg-gray-200">
+    
+    <!-- 頂部導覽列 (毛玻璃效果) -->
+    <nav class="sticky top-0 z-50 bg-[#fafafa]/80 backdrop-blur-md py-4 mb-12 border-b border-gray-200/50 flex justify-between items-center -mx-2 px-2 rounded-b-lg">
+      <a href="#" class="font-bold text-gray-900 tracking-tight">徐紹鈞</a>
+      <div class="flex gap-4 text-sm font-medium text-gray-500">
+        <a href="#about" class="hover:text-gray-900 transition-colors">關於</a>
+        <a href="#experience" class="hover:text-gray-900 transition-colors">經歷</a>
+        <a href="#community" class="hover:text-gray-900 transition-colors">社群</a>
+        <a href="#certificates" class="hover:text-gray-900 transition-colors">證照</a>
+      </div>
+    </nav>
+
+    <!-- 頂部標題與個人頭像 -->
+    <header class="mb-16 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-8">
+      <div class="sm:w-2/3">
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-2">徐紹鈞 (Shao-Chun Hsu)</h1>
+        <p class="text-gray-500 text-sm">跨領域專案執行 / 資訊安全與網頁維護 / 行銷企劃與社群營運</p>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          具備強大的實踐與決斷力。深信「知識與經驗是別人無法奪走的寶藏」，游刃於資訊技術、行銷企劃與大型社群之間，擅長透過專案執行將想法落地。
+        </p>
+      </div>
+      <div class="sm:w-1/3 flex sm:justify-end">
+        <img src="/profile.jpg" alt="徐紹鈞" class="w-32 h-32 rounded-full object-cover shadow-md border border-gray-100" />
+      </div>
+    </header>
+
+    <!-- 關於我 (加上 id="about" 與 scroll-mt-24) -->
+    <section id="about" class="mb-16 scroll-mt-24">
+      <h2 class="text-lg font-bold mb-6 border-b border-gray-200 pb-2">關於我</h2>
+      <div class="space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+        <p>
+          2026 年畢業於國立雲林科技大學。求學歷程從技職體系出發，為了尋求能與不同背景同儕交流思想的互動環境，一路探索並不斷挑戰自我。
+        </p>
+        <p>
+          我不僅依賴課堂知識，更將學習主動延伸至實務。從高中畢業時主動協助餐廳將資訊知識應用於營運，到參與資訊安全競賽與國際語言學校行政；我善於適應高壓環境，並能在不同文化與專業背景的團隊中擔任溝通樞紐。
+        </p>
+      </div>
+    </section>
+
+    <!-- 工作經驗 (加上 id="experience" 與 scroll-mt-24) -->
+    <section id="experience" class="mb-16 scroll-mt-24">
+      <h2 class="text-lg font-bold mb-6 border-b border-gray-200 pb-2">工作經驗</h2>
+      <div class="space-y-6">
+        <div class="flex flex-col sm:flex-row">
+          <div class="sm:w-1/4 text-gray-400 font-mono text-sm mb-1 sm:mb-0 pt-1">2021/08 → 現在</div>
+          <div class="sm:w-3/4">
+            <div class="font-medium text-gray-900">數位行銷與專案協作</div>
+            <div class="text-gray-500 text-sm">歡喜心集 / 花上雅整合行銷</div>
+            <ul class="list-disc list-inside text-gray-600 text-sm mt-2 space-y-1">
+              <li>經營社群、規劃貼文主題並設計活動海報與宣傳素材。</li>
+              <li>進行市場開發與顧客關係管理，協助網站內容管理與維護。</li>
+              <li>參與跨部門協作、影片錄製與廣告拍攝專案。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row">
+          <div class="sm:w-1/4 text-gray-400 font-mono text-sm mb-1 sm:mb-0 pt-1">2024/07 → 2025</div>
+          <div class="sm:w-3/4">
+            <div class="font-medium text-gray-900">國際語言學校行政管理</div>
+            <div class="text-gray-500 text-sm">菲律賓宿霧 BTES 國際語言學校 (暑期)</div>
+            <ul class="list-disc list-inside text-gray-600 text-sm mt-2 space-y-1">
+              <li>負責逾 100 位學生的行政與生活事務，確保短期遊學專案順暢運行。</li>
+              <li>全程使用英語擔任台灣同事、當地教師與學生間的溝通樞紐。</li>
+              <li>管理學校小賣部進貨、庫存控制及現金流。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row">
+          <div class="sm:w-1/4 text-gray-400 font-mono text-sm mb-1 sm:mb-0 pt-1">2023/10 → 2024</div>
+          <div class="sm:w-3/4">
+            <div class="font-medium text-gray-900">資訊設備維護與設計</div>
+            <div class="text-gray-500 text-sm">海碩能源股份有限公司</div>
+            <p class="text-gray-600 text-sm mt-2">負責電腦設備基礎維護、信箱系統管理及網站內容調整；獨立完成公司名片設計並處理帳務請款。</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row">
+          <div class="sm:w-1/4 text-gray-400 font-mono text-sm mb-1 sm:mb-0 pt-1">2023/03 → 2023</div>
+          <div class="sm:w-3/4">
+            <div class="font-medium text-gray-900">資訊安全處 實習生</div>
+            <div class="text-gray-500 text-sm">永豐商業銀行</div>
+            <p class="text-gray-600 text-sm mt-2">負責 USB、藍芽、DLP 設備維運及社群媒體跳板機檢核。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 開源社群與志工服務 (加上 id="community" 與 scroll-mt-24) -->
+    <section id="community" class="mb-16 scroll-mt-24">
+      <h2 class="text-lg font-bold mb-6 border-b border-gray-200 pb-2">開源社群與志工服務</h2>
+      <div class="space-y-4 text-sm">
+        <div class="flex justify-between border-b border-gray-100 pb-2">
+          <span class="text-gray-700"><strong>COSCUP 開源人年會</strong> 場務組長 (負責人員調度與場地規劃)</span>
+          <span class="text-gray-400 font-mono">2021</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-100 pb-2">
+          <span class="text-gray-700"><strong>SITCON 學生計算機年會 Camp</strong> 隊輔組長 / 組員</span>
+          <span class="text-gray-400 font-mono">2021 / 2025</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-100 pb-2">
+          <span class="text-gray-700"><strong>HITCON 台灣駭客年會</strong> 場務組員</span>
+          <span class="text-gray-400 font-mono">2021 - 2022</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-100 pb-2">
+          <span class="text-gray-700"><strong>社會公益</strong> 萬芳醫院愛心餐盒活動 (協調、搬運與送餐)</span>
+          <span class="text-gray-400 font-mono">志工</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-100 pb-2">
+          <span class="text-gray-700"><strong>台灣燈會在台北</strong> 導覽解說與遊客服務志工</span>
+          <span class="text-gray-400 font-mono">2023</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 專業證照 (加上 id="certificates" 與 scroll-mt-24) -->
+    <section id="certificates" class="mb-16 scroll-mt-24">
+      <h2 class="text-lg font-bold mb-6 border-b border-gray-200 pb-2">專業證照</h2>
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">MOS 2016 (Word, Excel, PPT, Access)</span>
+        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">勞動部 電腦軟體應用 乙/丙級</span>
+        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">勞動部 網頁設計 丙級</span>
+        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">NCC 業餘無線電人員執照</span>
+        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">TQC+ 網頁設計 / 雲端技術 專業級</span>
+        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">TQC 專業行銷 / e-Office 專業級</span>
+      </div>
+    </section>
+
+    <footer class="text-center text-gray-400 text-xs mt-24 border-t border-gray-100 pt-8">
+      © 2026 徐紹鈞 Shao-Chun Hsu
+    </footer>
+  </body>
+</html>
